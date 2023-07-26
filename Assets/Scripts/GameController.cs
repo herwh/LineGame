@@ -75,7 +75,7 @@ public class GameController : MonoBehaviour
     {
         GetScreenPoints();
         
-        if (_circle.transform.position.y < _screenPointDownRight.y || _circle.transform.position.y > _screenPointTopRight.y)
+        if (_circle.transform.position.y < _screenPointDownRight.y || _circle.transform.position.y > _screenPointTopRight.y-1)
         {
             ReloadScene();
         }

@@ -6,6 +6,7 @@ public class Target : MonoBehaviour
     [SerializeField] private float _minDistanceToCatch;
     [SerializeField] private float _minDistanceToDestroy;
     [SerializeField] private float _speed;
+    
     void Update()
     {
         MoveToCircle();
@@ -27,6 +28,5 @@ public class Target : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-        
     }
 }
